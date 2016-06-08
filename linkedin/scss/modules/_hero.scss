@@ -1,0 +1,66 @@
+.hero {
+  background-color: #fff;
+  height: 390px;
+
+  .main {
+    margin-top: 48px !important;
+    text-align: center;
+
+    span { display: block; }
+
+    .profile-picture {
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      display: inline-block;
+      height: 160px;
+      position: relative;
+      width: 160px;
+
+      i {
+        background-color: $off-white;
+        border-radius: 1px;
+        bottom: 5px;
+        color: $blue;
+        font-size: 26px;
+        padding: 1px 3px;
+        position: absolute;
+        right: 5px;
+      }
+    }
+
+    .counters > div { display: inline-block; }
+  }
+}
+
+.profile-name {
+  font-size: 18px;
+  margin: 10px 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.profile-title {
+  color: rgba($black, .5);
+  font-size: 14px;
+}
+
+.profile-location {
+  color: rgba($black, .35);
+  font-size: 13px;
+}
+
+.counters {
+  color: $blue;
+  font-size: 18px;
+  margin-top: 20px;
+
+  & > div:last-child { margin-left: 10px; }
+
+  span {
+    color: $black;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+}
