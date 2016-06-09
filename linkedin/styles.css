@@ -509,6 +509,31 @@ body {
     .columns.is-desktop {
       display: flex; } }
 
+.btn {
+  color: rgba(20, 20, 20, 0.4);
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 2px rgba(20, 20, 20, 0.4);
+  border-radius: 6px;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-top: 28px;
+  outline: 0;
+  padding: 11px 29px 13px;
+  text-transform: uppercase;
+  transition: background 100ms ease-in-out; }
+  .btn:hover {
+    background-color: rgba(20, 20, 20, 0.4);
+    color: #fff; }
+  .btn.primary {
+    color: #61a8ff;
+    border-color: #61a8ff; }
+    .btn.primary:hover {
+      background-color: #61a8ff;
+      color: #fff; }
+
 header {
   background-color: #f6f7f9;
   height: 80px;
@@ -571,7 +596,7 @@ header {
       width: 160px; }
       .hero .main .profile-picture i {
         background-color: #f6f7f9;
-        border-radius: 1px;
+        border-radius: 1.5px;
         bottom: 5px;
         color: #61a8ff;
         font-size: 26px;
@@ -580,6 +605,26 @@ header {
         right: 5px; }
     .hero .main .counters > div {
       display: inline-block; }
+  .hero .about i {
+    color: #61a8ff; }
+  .hero .about p {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    margin-bottom: 36px;
+    margin-top: 34px; }
+    .hero .about p i {
+      padding-right: 4px; }
+  .hero .about ul {
+    list-style-type: none; }
+  .hero .about li {
+    margin-bottom: 10px !important;
+    vertical-align: bottom; }
+    .hero .about li i {
+      font-size: 20px; }
+  .hero .about ul,
+  .hero .about li {
+    margin: 0;
+    padding: 0; }
 
 .profile-name {
   font-size: 18px;
@@ -598,11 +643,22 @@ header {
 .counters {
   color: #61a8ff;
   font-size: 18px;
+  letter-spacing: 1.5px;
   margin-top: 20px; }
   .counters > div:last-child {
-    margin-left: 10px; }
+    margin-left: 20px; }
   .counters span {
     color: #141414;
-    font-size: 10px;
-    letter-spacing: 1.5px;
+    font-size: 9px;
+    letter-spacing: 1.25px;
     text-transform: uppercase; }
+
+.about-list-title {
+  width: 90px; }
+
+.about-list-desc {
+  color: rgba(20, 20, 20, 0.4); }
+
+.about-list-title,
+.about-list-desc {
+  display: inline-block; }

@@ -19,7 +19,7 @@
 
       i {
         background-color: $off-white;
-        border-radius: 1px;
+        border-radius: 1.5px;
         bottom: 5px;
         color: $blue;
         font-size: 26px;
@@ -30,6 +30,34 @@
     }
 
     .counters > div { display: inline-block; }
+  }
+
+  .about {
+    i { color: $blue; }
+
+    p {
+      font-size: 22px;
+      letter-spacing: 1.5px;
+      margin-bottom: 36px;
+      margin-top: 34px;
+
+      i { padding-right: 4px; }
+    }
+
+    ul { list-style-type: none; }
+
+    li {
+      margin-bottom: 10px !important;
+      vertical-align: bottom;
+
+      i { font-size: 20px; }
+    }
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
@@ -53,14 +81,28 @@
 .counters {
   color: $blue;
   font-size: 18px;
+  letter-spacing: 1.5px;
   margin-top: 20px;
 
-  & > div:last-child { margin-left: 10px; }
+  & > div:last-child { margin-left: 20px; }
 
   span {
     color: $black;
-    font-size: 10px;
-    letter-spacing: 1.5px;
+    font-size: 9px;
+    letter-spacing: 1.25px;
     text-transform: uppercase;
   }
+}
+
+.about-list-title {
+  width: 90px;
+}
+
+.about-list-desc {
+  color: rgba($black, .4);
+}
+
+.about-list-title,
+.about-list-desc {
+  display: inline-block;
 }

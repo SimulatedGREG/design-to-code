@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node-sass -w scss/main.scss styles.css"
+    "dev": "npm-run-all --parallel sass server",
+    "sass": "node-sass -w scss/main.scss styles.css",
+    "server": "static-server"
   },
   "author": "Greg Holguin <simulatedgreg@gmail.com> (https://github.com/SimulatedGREG)",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^3.7.0"
+    "node-sass": "^3.7.0",
+    "npm-run-all": "^2.1.1"
   }
 }
